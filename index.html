@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button onclick="searchCity()">Search</button>
+      </div>
+      <button id="toggle-theme">Theme</button>
+    </div>
+
+    <div class="current-weather">
+      <h2 id="location">Search for a city</h2>
+      <div class="temp">🌤️ <span id="temperature">--</span>°C</div>
+      <p id="description">--</p>
+      <div class="details">
+        <span>Humidity: <span id="humidity">--</span>%</span>
+        <span>Wind: <span id="wind">--</span> km/h</span>
+        <span>Feels Like: <span id="feels_like">--</span>°C</span>
+      </div>
+    </div>
+
+    <div class="hourly-container" id="hourly"></div>
+
+    <div class="forecast-container" id="forecast">
+      <!-- 5-day forecast will appear here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
